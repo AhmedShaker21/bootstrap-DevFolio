@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: rgba(0, 123, 255, 0.517);
+    --main-primary: #0078FF;
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-position: center;
+    background-image: url("../images/background-image/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.image-overlay {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--main-color);
+}
+
+.carousel-inner {
+    height: 500px;
+    position: relative;
+}
+
+
+
+.carousel-caption {
+    padding-top: 80px;
+}
+
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background-image/overlay-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
+
+.carousel-inner::before {
+    width: 100%;
+    background-color: var(--main-color);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    .carousel-caption {
+        position: relative;
+        z-index: 9999;
+        overflow: hidden;
+    }
+}
+
+.carousal-wrapper {
+    margin-top: 1.875rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    /* change width */
+    height: 10px;
+    /* change height */
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;
+}
+
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+nav {
+    position: fixed;
+}
+
+.photo-class p {
+    text-align: center;
+
+}
+
+.photo-class span {
+    animation: text-delete 0.5s infinite;
+    height: 3.75rem;
+}
+
+.wipe {
+    width: 13.75rem;
+    overflow: hidden;
+    animation: wipe 4s 2s infinite steps(12, end);
+}
+
+.about-services {
+    background-color: #F5F5F5;
+    height: fit-content;
+
+}
+
+.image-section {
+    width: 12.5rem;
+}
+
+ul li span {
+    font-weight: bold;
+}
+
+.about-section .container {
+    background-color: #FFFFFF;
+}
+
+
+/* Home Section */
+.progress {
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 0;
+}
+
+
+.y {
+    background-color: violet;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.color {
+    background-color: transparent;
+}
+
+.about-container h1 {
+    position: relative;
+}
+
+.about-container h1::before {
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    height: .1563rem;
+    background-color: var(--main-primary);
+    top: 100%;
+    left: 0;
+}
+
+.about-container p {
+    margin-top: .9375rem;
+    color: black;
+}
+
+.send-message-section {
+    height: fit-content;
+    background-image: url(../images/background-image/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.send-message-section .image-overlay {
+    padding: 8rem 4rem;
+}
+
+.send-message-section .container {
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+}
+
+.send-message-section .container h1 {
+    position: relative;
+}
+
+.send-message-section .container h1::before {
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    height: .1563rem;
+    background-color: blue;
+    top: 100%;
+    left: 0;
+}
+
+.send-message-section i {
+    color: var(--main-primary);
+}
+                                                          /*                      */
+.container-icon-social {
+    width: 3.3125rem;
+    height: 3.1875rem;
+    transition: .6s ease, .4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border: 2px solid var(--main-color);
+}
+
+.container-icon-social:hover {
+    background-color: var(--main-primary);
+    border-color: #d3e7feb1;
+    i{
+        color: white !important;
+
+    }
+
+
+}
+
+.button-properties {
+    height: 3rem;
+    width: 12rem;
+    transition: .6s ease, .4s;
+    box-shadow: 2px 2px 2px rgba(203, 199, 255, 0.9);
+    border: 5px solid var(--main-color);
+}
+
+.button-properties:hover {
+    background-color: #016eeaca;
+    transition: all 500ms ease;
+    border-color: #d3e7feb1;
+}
+
+about-section
+/* service */
+
+.h1-large-font {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.color-gray {
+    color: #717171;
+}
+
+.make-line {
+    position: relative;
+    height: fit-content;
+}
+
+.container i {
+    font-size: 25px;
+
+}
+
+.container-icon {
+    width: 7.125rem;
+    height: 7.1875rem;
+    transition: .6s ease, .4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    border: 10px solid var(--main-color);
+}
+
+.container-hover:hover {
+    .container-icon {
+        background-color: var(--main-primary);
+        border-color: #d3e7feb1;
+    }
+    i{
+        color: white !important;
+
+    }
+}
+
+.make-line p {
+    position: relative;
+}
+
+.make-line::before {
+    content: "";
+    transform: translateX(-50%);
+    position: absolute;
+    width: 3rem;
+    height: .35rem;
+    background-color: var(--main-primary);
+    top: 8.3125rem;
+    left: 50%;
+    right: 50%;
+}
+
+/* dynamic section */
+.container-dynamic-icon {
+    width: 5.4375rem;
+    height: 5.25rem;
+    border: 7px solid white;
+}
+
+.dynamic-section {
+    height: fit-content;
+    background-image: url(../images/background-image/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.image-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+/* Portfolio */
+.image-container img:hover {
+    transform: scale(1.5);
+}
+
+.portfolio-line {
+    position: relative;
+}
+
+.portfolio-line::before {
+    content: "";
+    transform: translateX(-50%);
+    position: absolute;
+    width: 3rem;
+    height: .35rem;
+    background-color: var(--main-primary);
+    top: 5.625rem;
+}
+
+/* Blog */
+.image-blog {
+    width: 1.75rem;
+}
+
+.icon-container {
+    width: 1.5625rem;
+}
+
+.icon-container i {
+    font-size: .9375rem;
+}
+
+.card {
+    position: relative;
+}
+
+.blog-line {
+    position: relative;
+}
+
+.blog-line::before {
+    content: "";
+    transform: translateX(50%);
+    position: absolute;
+    width: 3rem;
+    height: .35rem;
+    background-color: var(--main-primary);
+    top: 5.625rem;
+}
+
+.first-card-content::before {
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 63%;
+    content: "TRAVEL";
+    padding-top: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 4.3125rem;
+    height: 1.625rem;
+    background-color: var(--main-primary);
+}
+
+.second-card-content::before {
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 63%;
+    content: "WEB DESIGN";
+    padding-top: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 5.4rem;
+    height: 1.625rem;
+    background-color: var(--main-primary);
+}
+
+
+/* .large-container span , .small-container span{
+    font-size: 12px;
+    font-weight: bold;
+} */
+
+@keyframes wipe {
+
+    0% {
+        width: 100%
+    }
+
+    50% {
+        width: 0;
+    }
+}
+
+@keyframes text-delete {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dropdown-menu .submenu {
+        display: none;
+        position: relative;
+        left: 0%;
+        top: 0%;
+    }
+}
